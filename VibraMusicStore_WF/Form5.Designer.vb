@@ -40,6 +40,8 @@ Partial Class Form5
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -49,6 +51,8 @@ Partial Class Form5
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.SystemColors.ButtonFace
+        Me.GroupBox1.Controls.Add(Me.TextBox3)
+        Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.TextBox4)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.DataGridView1)
@@ -246,6 +250,23 @@ Partial Class Form5
         Me.Button4.Text = "Buscar"
         Me.Button4.UseVisualStyleBackColor = False
         '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(359, 64)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(59, 19)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "Marca:"
+        '
+        'TextBox3
+        '
+        Me.TextBox3.Location = New System.Drawing.Point(424, 65)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(123, 20)
+        Me.TextBox3.TabIndex = 12
+        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -284,4 +305,6 @@ Partial Class Form5
     Friend WithEvents Button2 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
+    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Label4 As Label
 End Class
