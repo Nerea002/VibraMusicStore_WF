@@ -95,7 +95,7 @@ Partial Class Form9
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form9"
-        Me.Text = "Form9"
+        Me.Text = "Ingresos de usuarios"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

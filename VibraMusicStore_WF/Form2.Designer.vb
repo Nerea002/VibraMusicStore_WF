@@ -23,6 +23,10 @@ Partial Class Form2
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -32,16 +36,20 @@ Partial Class Form2
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.Label7)
+        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.TextBox5)
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.TextBox4)
@@ -61,9 +69,43 @@ Partial Class Form2
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         '
+        'TextBox5
+        '
+        Me.TextBox5.Location = New System.Drawing.Point(101, 276)
+        Me.TextBox5.Name = "TextBox5"
+        Me.TextBox5.Size = New System.Drawing.Size(228, 20)
+        Me.TextBox5.TabIndex = 13
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(6, 272)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(93, 24)
+        Me.Label5.TabIndex = 12
+        Me.Label5.Text = "Telefono:"
+        '
+        'TextBox4
+        '
+        Me.TextBox4.Location = New System.Drawing.Point(73, 243)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(256, 20)
+        Me.TextBox4.TabIndex = 11
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(6, 238)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(69, 24)
+        Me.Label4.TabIndex = 10
+        Me.Label4.Text = "R.F.C:"
+        '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(124, 249)
+        Me.TextBox3.Location = New System.Drawing.Point(124, 212)
         Me.TextBox3.Name = "TextBox3"
         Me.TextBox3.Size = New System.Drawing.Size(205, 20)
         Me.TextBox3.TabIndex = 9
@@ -72,7 +114,7 @@ Partial Class Form2
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(6, 244)
+        Me.Label3.Location = New System.Drawing.Point(6, 209)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(120, 24)
         Me.Label3.TabIndex = 8
@@ -101,19 +143,19 @@ Partial Class Form2
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(108, 30)
         Me.Button2.TabIndex = 6
-        Me.Button2.Text = "Cancelar"
+        Me.Button2.Text = "Cerrar"
         Me.Button2.UseVisualStyleBackColor = False
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(101, 203)
+        Me.TextBox2.Location = New System.Drawing.Point(101, 177)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(228, 20)
         Me.TextBox2.TabIndex = 4
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(101, 155)
+        Me.TextBox1.Location = New System.Drawing.Point(101, 143)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(228, 20)
         Me.TextBox1.TabIndex = 3
@@ -122,7 +164,7 @@ Partial Class Form2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(6, 198)
+        Me.Label2.Location = New System.Drawing.Point(6, 177)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(80, 24)
         Me.Label2.TabIndex = 2
@@ -132,7 +174,7 @@ Partial Class Form2
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(6, 150)
+        Me.Label1.Location = New System.Drawing.Point(6, 138)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(89, 24)
         Me.Label1.TabIndex = 1
@@ -148,39 +190,41 @@ Partial Class Form2
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'Label4
+        'Label6
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(6, 281)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(69, 24)
-        Me.Label4.TabIndex = 10
-        Me.Label4.Text = "R.F.C:"
+        Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Location = New System.Drawing.Point(6, 305)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(102, 24)
+        Me.Label6.TabIndex = 14
+        Me.Label6.Text = "Dirección:"
         '
-        'TextBox4
+        'TextBox6
         '
-        Me.TextBox4.Location = New System.Drawing.Point(73, 286)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(256, 20)
-        Me.TextBox4.TabIndex = 11
+        Me.TextBox6.Location = New System.Drawing.Point(112, 310)
+        Me.TextBox6.Name = "TextBox6"
+        Me.TextBox6.Size = New System.Drawing.Size(217, 20)
+        Me.TextBox6.TabIndex = 15
         '
-        'Label5
+        'Label7
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(6, 320)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(93, 24)
-        Me.Label5.TabIndex = 12
-        Me.Label5.Text = "Telefono:"
+        Me.Label7.AutoSize = True
+        Me.Label7.Font = New System.Drawing.Font("Times New Roman", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Location = New System.Drawing.Point(6, 342)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(159, 24)
+        Me.Label7.TabIndex = 16
+        Me.Label7.Text = "Nivel de usuario:"
         '
-        'TextBox5
+        'ComboBox1
         '
-        Me.TextBox5.Location = New System.Drawing.Point(101, 324)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(228, 20)
-        Me.TextBox5.TabIndex = 13
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Cliente", "Admin", "Emplead@"})
+        Me.ComboBox1.Location = New System.Drawing.Point(174, 345)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(155, 21)
+        Me.ComboBox1.TabIndex = 17
         '
         'Form2
         '
@@ -191,7 +235,7 @@ Partial Class Form2
         Me.ClientSize = New System.Drawing.Size(446, 504)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form2"
-        Me.Text = "Registro Admin"
+        Me.Text = "Registro"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -213,4 +257,8 @@ Partial Class Form2
     Friend WithEvents Label5 As Label
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label7 As Label
+    Friend WithEvents TextBox6 As TextBox
+    Friend WithEvents Label6 As Label
 End Class

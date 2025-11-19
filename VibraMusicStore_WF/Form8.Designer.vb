@@ -23,9 +23,9 @@ Partial Class Form8
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -49,6 +49,15 @@ Partial Class Form8
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         '
+        'ComboBox1
+        '
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"Servicios por Cliente", "Servicios por Instrumento", "Servicios Vigentes", "Servicios Finalizados"})
+        Me.ComboBox1.Location = New System.Drawing.Point(73, 54)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(474, 21)
+        Me.ComboBox1.TabIndex = 9
+        '
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
@@ -66,15 +75,6 @@ Partial Class Form8
         Me.Label1.Size = New System.Drawing.Size(143, 19)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Seleccionar criterio:"
-        '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Servicios por Cliente", "Servicios por Instrumento", "Servicios Vigentes", "Servicios Finalizados"})
-        Me.ComboBox1.Location = New System.Drawing.Point(73, 54)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(474, 21)
-        Me.ComboBox1.TabIndex = 9
         '
         'PictureBox1
         '
@@ -148,7 +148,7 @@ Partial Class Form8
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Form8"
-        Me.Text = "Form8"
+        Me.Text = "Mostrar servicios"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
